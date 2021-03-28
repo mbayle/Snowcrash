@@ -17,7 +17,7 @@ The script takes a parameter and then prints it to the screen. We are also told 
 
 To get the flag, all we have to do is run a command of our choice through the script. 
 
-curl localhost:4747?x='$(getflag)'`
+`curl localhost:4747?x='$(getflag)'`
 
 Here we use a subshell to make the script run the getflag command. So we get the token :
 

@@ -20,6 +20,7 @@ After some research I found the string had been modified with a cesar code, when
 We just have to connect to the flag00 (password : nottohardhere) and launch the getflag command :
 
 `su flag00`
+
 `getflag`
 
 You get the flag ! 

@@ -1,6 +1,7 @@
 ### Level04
 
 On our HOME we can see a pearl script:
+```pearl
     #!/usr/bin/perl
     # localhost:4747
     use CGI qw{param};
@@ -10,6 +11,7 @@ On our HOME we can see a pearl script:
       print `echo $y 2>&1`;
     }
     x(param("x"));`
+```
 
 The script takes a parameter and then prints it to the screen. We are also told that the result is accessible on localhost:4747.
 

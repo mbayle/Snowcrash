@@ -2,7 +2,7 @@
 
 We start by looking level08 with strings and notice calls to the following functions: `printf strstr read open`. We can deduce the program is doing a comparison during his execution.
 
-If we run ./level08, we get usage 
+If we run ./level08, we got usage 
 
     ./level08 [file to read]
 
@@ -27,7 +27,7 @@ After creating the test file, I try to run the command again with this file as a
 
 Now that I have the rights to my HOME and I know `level08` is just printing the contents I just need to change the token name to pass the `strstr` condition with `mv token test`
 
-We just have to connect to the flag01 (password : `quif5eloekouj29ke0vouxean`) and launch the getflag command :
+We just have to connect to the flag09 (password : `quif5eloekouj29ke0vouxean`) and launch the getflag command :
 
 `su flag08`
 

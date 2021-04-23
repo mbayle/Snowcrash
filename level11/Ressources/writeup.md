@@ -1,6 +1,6 @@
 ### Level11
 
-We can see a script on the HOME, we can see that the suid/guid is active. This means that everything will be executed with flag11 permissions. After displaying the program we also know for sure that it is listening on port 5151 of the localhost.
+We can see a script in the HOME, we can see that the suid/guid is active. This means that everything will be executed as flag11. After displaying the program we also know for sure that's listening on port 5151 of the localhost.
 
 `local server = assert(socket.bind("127.0.0.1", 5151))`
 

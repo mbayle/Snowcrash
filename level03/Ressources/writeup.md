@@ -1,6 +1,6 @@
 ### Level03
 
-Once on the home of level03, we can see :
+Once in the home of level03, we can see :
 
 ```
 level03@SnowCrash:~$ ls -l

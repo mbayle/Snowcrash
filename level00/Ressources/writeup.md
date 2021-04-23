@@ -1,6 +1,6 @@
 ### Level00
 
-First we have to find out which file we can run with user flag00 and for more readability we close stderr
+First we have to find out which file we can run as user flag00 and for more readability we close stderr
 
 `find / -user flag00 2>/dev/null`
 

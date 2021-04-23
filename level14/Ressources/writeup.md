@@ -25,7 +25,7 @@ Dump of assembler code for function main:
    0x0804898e <+72>: test %eax,%eax
    (...)
 ```
-We can see at main+67 a call to ptrace is made followed by a comparison. Let's look at the register values:
+We can see at main+67 a call to ptrace is made, followed by a comparison. Let's look at the register values:
 ```
 (gdb) break *main+72
 Breakpoint 1 at 0x804898e
@@ -36,7 +36,7 @@ Breakpoint 1, 0x0804898e in main ()
 $1 = -1
 ```
 
-So it's the return value of ptrace that prevents us from continuing the execution. We can simply change it as with level13 :
+So it's the return value of ptrace that prevents us from continuing the execution. We can simply change it as in level13 :
 ```
 ((gdb) s $eax=0
 (gdb) p $eax
@@ -47,7 +47,7 @@ Check flag.Here is your token :
 Nope there is no token here for you sorry. Try again :)
 [Inferior 1 (process 3001) exited normally]
 ```
-This still doesn't work, there must be a uid check as in the previous level and we want the uid of user flag14. Just look in the `/etc/passwd` file to get it. After several minutes I find the call to `getuid` (main+439) and then the comparison et main+452. Now that we have this information we just need to change the value of `eax` and continue the execution:
+This still doesn't work, there must be a uid check as in the previous level and we want the uid of user flag14. Just look in the `/etc/passwd` file to get it. After several minutes, I find the call to `getuid` (main+439) and then the comparison at main+452. Now that we have this information we just need to change the value of `eax` and continue the execution:
 ```
 (gdb) break *main+452
 (gdb) p $eax

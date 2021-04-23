@@ -1,6 +1,6 @@
 ### Level04
 
-On our HOME we can see a pearl script:
+In our HOME we can see a perl script:
 ```pearl
     #!/usr/bin/perl
     # localhost:4747

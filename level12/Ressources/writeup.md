@@ -37,9 +37,9 @@ n(t(param("x"), param("y")));
 We can observe 3 things:
 - The script listens on port 4646
 - It takes 2 parameters but only the first "x" is used
-- x" is modified via regexes: 
-	- `tr/a-z/A-Z/` will capitalize "x
-	- `s/\s.*//;` the argument must start with a whitespace characters and be followed by characters
+- "x" is modified via regexes: 
+	- `tr/a-z/A-Z/` will capitalize "x"
+	- `s/\s.*//;` the argument must start with whitespaces characters and be followed by characters
 
 Let's start by creating a script to run the `getflag` command in a file:
 

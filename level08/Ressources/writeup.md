@@ -1,16 +1,16 @@
 ### Level08
 
-We start by looking level08 with strings and notice calls to the following functions: `printf strstr read open`. We can deduce the program is doing a comparison during his execution.
+We start by looking `./level08` with strings and notice calls to the following functions: `printf strstr read open`. We can deduce the program is doing a comparison during his execution.
 
-If we run ./level08, we got usage 
+If we run ./level08, we get it's usage 
 
     ./level08 [file to read]
 
-To see where the comparison is done we can use `ltrace ./level08 test` and see that the program is comparing argv with the string "token":
+To see where the comparison is done, we can use `ltrace ./level08 test` and see that the program is comparing argv with the string "token":
 
     strstr("test", "token") = NULL
 
-If I run `ltrace` again with token as argument the result of the comparison is :
+If I run `ltrace` again with `token` as argument the result of the comparison is :
 
     strstr("token", "token") = "token"
 
@@ -27,7 +27,7 @@ After creating the test file, I try to run the command again with this file as a
 
 Now that I have the rights to my HOME and I know `level08` is just printing the contents I just need to change the token name to pass the `strstr` condition with `mv token test`
 
-We just have to connect to the flag09 (password : `quif5eloekouj29ke0vouxean`) and launch the getflag command :
+We just have to connect to the flag08 (password : `quif5eloekouj29ke0vouxean`) and launch the getflag command :
 
 `su flag08`
 

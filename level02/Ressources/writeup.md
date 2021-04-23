@@ -1,9 +1,9 @@
 ### Level02
-Once on the home of level02, we can see a pcap file :
+Once in the home of level02, we can see a pcap file :
 
 > ----r--r-- 1 flag02 level02 8302 Aug 30 2015 level02.pcap
 
-First of all to be able to analyse it with Wireshark we must first retrieve it on our computer. Just type the following command (remember to make a chmod once on the computer):
+First of all to be able to analyze it with Wireshark we must first retrieve it onto our computer. Just type the following command (remember to make a chmod once on the computer):
 
 `scp -P 4242 level02@<replace with your IP>:~/level02.pcap ~/Desktop`
 
@@ -35,7 +35,7 @@ If we try to type it we can see it's incorrect. We changing the view of the soft
 
 The character `7f` corresponds to `DEL` so we can deduce that the real password is: ` ft_waNDReL0L`.
 
-We just have to connect to the flag01 (password : ft_waNDReL0L) and launch the getflag command :
+We just have to connect to the flag02 (password : ft_waNDReL0L) and launch the getflag command :
 
 `su flag02`
 

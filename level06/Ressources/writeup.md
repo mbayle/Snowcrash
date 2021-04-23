@@ -1,6 +1,6 @@
 ### Level06
 
-We have an executable and a .php file in the HOME. In the 2nd file, we can see a call to `preg_replace` with the deprecated flag `/e`. This flag will then allows us to make a call to exec with the rights of flag04. But to do this our argument need to match with the regex in this line `$a = preg_replace("/(\[x (.*)\])/e", "y(\"\2")", $a);`. 
+We have an executable and a .php file in the HOME. In the 2nd file, we can see a call to `preg_replace` with the deprecated flag `/e`. This flag will then allows us to make a call to exec with the rights of flag06. But to do this our argument need to match with the regex in this line `$a = preg_replace("/(\[x (.*)\])/e", "y(\"\2")", $a);`. 
 
 Let's start by creating our file: ``echo '[x {${`getflag`}}' > /tmp/exploit``.
 

@@ -1,6 +1,6 @@
 ### Level09
 
-In this level we have again an executable and a file. To start I run this one with and without arguments:
+In this level we have again an executable and a file. To start, I run this one with and without arguments:
 ```
 level09@SnowCrash:~$ ./level09
 You need to provied only one arg.
@@ -9,7 +9,7 @@ tpmhr
 level09@SnowCrash:~$ ./level09 aaaaa
 abcde
 ```
-As we can see the program takes an argument read from stdin and prints the result of a transformation. With the last example we can easily deduce that the program takes our argument character by character and adds its index to it:
+As we can see, the program takes an argument read from stdin and prints the result of a transformation. With the last example we can easily deduce that the program takes our argument character by character and adds its index to it:
 
 `
 a + 0 = a | a + 1 = b | a + 2 = c | etc ....
@@ -34,7 +34,7 @@ int main(int argc, char **argv)
     return (1);
 }
 ```
-Now I just need to do the following command to get my token:
+Now, I just need to use the following command to get my token:
 ```
 level09@SnowCrash:~$ ./reverse_hash `cat token`
 Password is: f3iji1ju5yuevaus41q1afiuq

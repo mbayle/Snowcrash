@@ -1,6 +1,6 @@
 ### Level05
 
-There is nothing on the HOME of this level. So as for level00 I start by doing ` find / -user flag05 2>/dev/null`. I get the following result:
+There is nothing in the HOME of this level. So as for level00 I start by doing ` find / -user flag05 2>/dev/null`. I get the following result:
 ```bash
 /usr/sbin/openarenaserver
 /rofs/usr/sbin/openarenaserver
